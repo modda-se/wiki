@@ -3,7 +3,7 @@
 Here are two patches that changes the directional control behavior in the game Landstalker - The Treasures of King Nole.
 
 ## Patch by MagicianLord:
-[Download]()
+[Download](Landstalker%20-%20The%20Treasures%20of%20King%20Nole%20(U)%20%5B!%5D%20-%20MagicianLord%20patch.ips)
 D-PAD	| GAME
 ----- | ----
 UP    | ↗
@@ -12,7 +12,7 @@ LEFT  | ↖
 RIGHT | ↘
 
 ## Patch by M.I.J.E.T
-[Download]()
+[Download](Landstalker%20-%20The%20Treasures%20of%20King%20Nole%20(U)%20%5B!%5D%20-%20MIJET%20patch.ips)
 D-PAD	| GAME
 ----- | ----
 UP    | ↖
