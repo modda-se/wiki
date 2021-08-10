@@ -1,3 +1,4 @@
 # Welcome to the modda.se "wiki"!
 
-We have a [discord](https://discord.gg/SbykG4x)
+- [Discord](https://discord.gg/SbykG4x)
+- [Instagram](https://www.instagram.com/modda.se/)
