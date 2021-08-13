@@ -1,5 +1,5 @@
 # How to program CDCE913/925 chip for DFOs
-This guide is for programming the Texas Instruments CDCE913/925 PLL chip used DFOs for the Mega Drive, Playstation and Saturn with a Raspberry Pi. This corrects the sync frequence with a DFO (Dual Frequence Oscillator) to match 60Hz on PAL consoles when using region modded PAL/NTSC consoles. This is my collection of files to make the process much easier do. Credit goes to ikorb. Original thread [here](https://nfggames.com/forum2/index.php?topic=5744.0).
+This guide is for programming the Texas Instruments CDCE913/925 PLL chip used DFOs for the Mega Drive, Playstation and Saturn with a Raspberry Pi. This corrects the sync frequence with a DFO (Dual Frequence Oscillator) to match 60Hz on PAL consoles when using region modded PAL/NTSC consoles. This is my collection of files to make the process much easier do. Credit goes to [ikorb](https://github.com/ikorb/cdceprog). Original thread [here](https://nfggames.com/forum2/index.php?topic=5744.0).
 
 # Connections
 
