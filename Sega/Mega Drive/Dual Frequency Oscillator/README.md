@@ -55,6 +55,7 @@ Your DFO is now programmed.
 - [Installation guide for Playstation](https://www.consolesunleashed.com/guides/sony-playstation-dual-frequency-oscillator-install-guide/)
 - [Installation guide for Mega Drive](https://www.consolesunleashed.com/guides/sony-playstation-dual-frequency-oscillator-install-guide/)
 
-![Playstation SCPH-100X PU-8 version](playstation-dfo-scph-100x-pu-8-3.5V.jpg)  
+[My own corrected installation](playstation-dfo-scph-100x-pu-8-3.5V.jpg) pic of the Playtation SCPH-100X PU-8 version. 
 
-![my installation](my_install.JPG)
+Picture of [my installation](my_install.JPG) (previous mods not made by me).
+
