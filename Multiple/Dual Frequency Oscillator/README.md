@@ -32,9 +32,9 @@ Type the following:
 
 
        cd Downloads
-       curl -o cdceprog.py put-correct-link-here
-       curl -o MD_PSX.HEX put-correct-link-here
-       curl -o SAT.HEX put-correct-link-here
+       curl -o https://github.com/modda-se/wiki/blob/a2f54dfe363eb13030f0b492cdebd7300c3b5df5/Multiple/Dual%20Frequency%20Oscillator/cdceprog.py
+       curl -o https://github.com/modda-se/wiki/blob/a2f54dfe363eb13030f0b492cdebd7300c3b5df5/Multiple/Dual%20Frequency%20Oscillator/MD_PSX.HEX
+       curl -o https://github.com/modda-se/wiki/blob/a2f54dfe363eb13030f0b492cdebd7300c3b5df5/Multiple/Dual%20Frequency%20Oscillator/SAT.HEX
 
 
        
