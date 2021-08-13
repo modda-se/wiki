@@ -16,7 +16,8 @@ When connection is done, open up your SSH software of choice, connect to the Rpi
 
        sudo i2cdetect -y 1
 
-You should see a lot of dashes but in all those dashes there should be a number saying 65 (or any number) [like this](https://lh3.googleusercontent.com/_Gxg1M49yRi2BTcX0c3Z45i9h1tF_bkZa5rPwzWThPDWSAVoe7ZAxWv1xEoaSQSiG40iK5rT7gLBfwl75UDkaSGNPgL3dOsNAjHFuS8S7v5-eZkJk62OTY54CyYILQQZ1Pm8r546riM=w2400).
+You should see a lot of dashes but in all those dashes there should be a number saying 65 (or any number) like this:
+<br>![i2detect](/i2cdetect.png).
 <br>If so, your good to go. If not, check your connections.
 
 # Programming
@@ -49,6 +50,6 @@ Your DFO is now programmed.
 Installation for Playstation. [Check this](https://www.consolesunleashed.com/guides/sony-playstation-dual-frequency-oscillator-install-guide/).
 <br>Installation for Mega Drive. [Check this](https://www.consolesunleashed.com/guides/sony-playstation-dual-frequency-oscillator-install-guide/).
 
-[My own corrected installation](https://lh3.googleusercontent.com/YM1fPKKGZmAsZ23TLTULbut0lwdu7vYrq3Oe_t-7z9aZYnW7kQdPS30FKhKIY_Z4Xth14he5_4DSMkzZdRePHbivP_WVnAIu9CCfXsZncvz31CIxwi5SFzW7G0Sq5I7l-KcyscL1HO0=w2400) pic of the Playtation SCPH-100X PU-8 version. 
+[My own corrected installation](/playstation-dfo-scph-100x-pu-8-3.5V.jpg) pic of the Playtation SCPH-100X PU-8 version. 
 
-Picture of [my installation](https://lh3.googleusercontent.com/yA1KRLiw6e9q29PxjYsE2boe5n0g3t3T99dDg1JlJhc2YcsBoSy-kkWRHj08fb8A3P_q4zZzKag11orBf0PaYURxHIdjlMMwspfZJojBVSPcbiEr0oOo8DOR_08zUR4Pe34DS7nPWgM=w2400) (previous mods not made by me).
+Picture of [my installation](/my_install.JPG) (previous mods not made by me).
