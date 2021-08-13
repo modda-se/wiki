@@ -27,4 +27,4 @@ RIGHT | ↗
 
 ## Instructions
 1. Download desired patch file
-2. Patch using Lunar IPS
+2. Patch game rom using Lunar IPS
