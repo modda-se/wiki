@@ -60,7 +60,7 @@ Connect the DFO pins to the corresponding points on your specific motherboard ve
 - [Installation guide for Playstation](https://www.consolesunleashed.com/guides/sony-playstation-dual-frequency-oscillator-install-guide/)
 - [Installation guide for Mega Drive](https://www.consolesunleashed.com/guides/sony-playstation-dual-frequency-oscillator-install-guide/)
 
-Playstation Playstation SCPH-100X PU-8:
+Playstation SCPH-100X PU-8:
 ![Playstation SCPH-100X PU-8 version](images/playstation-dfo-scph-100x-pu-8-3.5V.jpg)  
 
 Example of installed DFO in a Playstation.
