@@ -32,9 +32,8 @@ Type the following:
 
 
        cd Downloads
-       curl -o cdceprog.py put-correct-link-here
-       curl -o MD_PSX.HEX put-correct-link-here
-       curl -o SAT.HEX put-correct-link-here
+       git clone https://github.com/fix-ON/cdceprog_DFO.git
+       cd cdceprog_DFO
 
 
        
@@ -65,4 +64,4 @@ Playstation Playstation SCPH-100X PU-8:
 ![Playstation SCPH-100X PU-8 version](images/playstation-dfo-scph-100x-pu-8-3.5V.jpg)  
 
 Example of installed DFO in a Playstation.
-![example](images/example.JPG)
+![example](images/example.jpg)
