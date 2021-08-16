@@ -1,24 +1,60 @@
-# How to program CDCE913/925 chip for DFOs
-This guide is for programming the Texas Instruments CDCE913/925 PLL chip used DFOs for the Mega Drive, Playstation and Saturn with a Raspberry Pi. This corrects the sync frequency with a DFO (Dual Frequency Oscillator) to match 60Hz on PAL consoles when using region modded PAL/NTSC consoles. This is my collection of files to make the process much easier to do. 
+# DFO - Dual Frequency Oscillator
+The DFO (Dual Frequency Oscillator), corrects the 60Hz sync frequency on region modded PAL consoles. This guide is for programming the Texas Instruments CDCE913/925 PLL chip used with DFO's using a Raspberry Pi. This is a collection of files to make the process much easier.
 
-Credit goes to [ikorb](https://github.com/ikorb/cdceprog). Original thread [here](https://nfggames.com/forum2/index.php?topic=5744.0).
+Original German thread [here](https://circuit-board.de/forum/index.php/Thread/18016-DFO-Dual-Frequency-Oscillator/). English thread [here](https://nfggames.com/forum2/index.php?topic=5744.0) (outdated).
+
+Credit goes to [ikorb](https://github.com/ikorb/cdceprog).
+
+## DFO PCB's
+
+There are three types of DFO's. Each one are suited for different consoles:
+
+* DFO 5V DIL14 - Mega Drive, Amiga
+* DFO 5V SMD - Playstation, NEO GEO MV-1C
+* DFO 3.3V SMD - SNES
+
+When you know what DFO you need, program it with the correct HEX-files (timing files). More on this later. 
+
+Pre-programmed DFO's are hard to find in stock these days, so you should consider making your own DFO PCB's. Hence the reason for this guide. 
+
+If you're familiar with [JLCPCB](https://jlcpcb.com/) or [PCBWay](https://pcbway.com/), download the DFO gerber files [here](https://github.com/modda-se/wiki/tree/main/Multiple/Dual%20Frequency%20Oscillator/images).
+If not, do some research and come back. 
+
+## Configuration
+
+Before you start programming, you should have a Raspberry Pi running Raspbian or similar. Either connected through SSH (recommended) or directly, we need to make sure `ARM I2C interface` is enabled, by typing:
+
+       sudo raspi-config
+
+Navigate to `Interface Options > I2C > Yes` to enable `ARM I2C interface`.
+
+Now check if it's working:
+       
+       sudo i2cdetect -y 1
+
+You should see something like this:
+
+![i2c_detect](images/i2c_check.png)
+
+Great! Now you're all set for the next step.
 
 ## Connections
 
 To connect the DFO to the Raspberry Pi, check the nice overview of the
-GPIO connector [here](http://pi.gadgetoid.com/pinout). The programming
-pins on the DFO must be connected as follows:
+GPIO connector [here](http://pi.gadgetoid.com/pinout). The programming pins on the DFO must be connected as follows:
 
 * DFO `SDA` to RasPi pin 3
 * DFO `SCL` to RasPi pin 5
 * DFO `GND` to RasPi pin 6
 * DFO `3.3V` or `5V` to RasPi pin 1 or 2 (depends on the DFO board).
 
-When the connection is done, open up your SSH software of choice, connect to the Rpi and check if you can communicate with the clock generator chip on the DFO using:
+![example](images/dfo_rpi.jpg)
 
-`sudo i2cdetect -y 1`
+When the connection is done, check if you can communicate again with the clock generator chip on the DFO using:
 
-You should see a lot of dashes but in all those dashes there should be a number saying 65 (or any number) like this:
+       sudo i2cdetect -y 1
+
+You should see a lot of dashes (like the previous picture) but in all those dashes there should be a number saying 65 (or any number) like this:
 
 ![i2detect](images/i2cdetect.png).
 
@@ -26,17 +62,13 @@ If so, your good to go. If not, check your connections.
 
 ## Programming
 
-Let's start by downloading the Python script (this does the programming) and the HEX-files for Mega Drive, Playstation or Saturn (timing files).
+Let's start by downloading the Python script (this does the programming) and the HEX-files for Mega Drive/Playstation or Saturn.
 
 Type the following:
 
-
        cd Downloads
-       curl -o cdceprog.py put-correct-link-here
-       curl -o MD_PSX.HEX put-correct-link-here
-       curl -o SAT.HEX put-correct-link-here
-
-
+       git clone https://github.com/fix-ON/cdceprog_DFO.git
+       cd cdceprog
        
 Now, if your programming a DFO for the Mega Drive or Playstation, use `MD_PSX.HEX`. The Saturn, use `SAT.HEX`.
 
