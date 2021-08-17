@@ -45,6 +45,8 @@ To connect the DFO to the Raspberry Pi, the programming pins on the DFO must be 
 * DFO `GND` to RasPi pin 6
 * DFO `3.3V` or `5V` to RasPi pin 1 or 2 (depends on the DFO board)
 
+![pinout](images/pinout.png) 
+
 ![example](images/dfo_rpi.jpg)
 
 When the connection is done, check if you can communicate again with the clock generator chip on the DFO using:
