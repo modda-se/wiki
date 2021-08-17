@@ -1,5 +1,7 @@
 # DFO - Dual Frequency Oscillator
-The DFO (Dual Frequency Oscillator), corrects the 60Hz sync frequency on region modded PAL consoles. This guide is for programming the Texas Instruments CDCE913/925 PLL chip used with DFO's using a Raspberry Pi. This is a collection of files to make the process much easier.
+The DFO (Dual Frequency Oscillator), corrects the 60Hz sync frequency on region modded PAL consoles. It will NOT change the video encoding for colour over composite and RF video. They are ideal for RGB users.
+
+This guide is for programming the Texas Instruments CDCE913/925 PLL chip used with DFO's using a Raspberry Pi. This is a collection of files to make the process much easier. 
 
 Original German thread [here](https://circuit-board.de/forum/index.php/Thread/18016-DFO-Dual-Frequency-Oscillator/). English thread [here](https://nfggames.com/forum2/index.php?topic=5744.0) (outdated).
 
@@ -13,16 +15,14 @@ There are three types of DFO's. Each one are suited for different consoles:
 * DFO 5V SMD - Playstation, NEO GEO MV-1C
 * DFO 3.3V SMD - SNES
 
-When you know what DFO you need, program it with the correct HEX-files (timing files). More on this later. 
-
 Pre-programmed DFO's are hard to find in stock these days, so you should consider making your own DFO PCB's. Hence the reason for this guide. 
 
-If you're familiar with [JLCPCB](https://jlcpcb.com/) or [PCBWay](https://pcbway.com/), download the DFO gerber files [here](https://github.com/modda-se/wiki/tree/main/Multiple/Dual%20Frequency%20Oscillator/images).
-If not, do some research and come back. 
+If you don't already have a PCB or can't manage to buy one, you can order them from [JLCPCB](https://jlcpcb.com/) or [PCBWay](https://pcbway.com/) by uploading the gerber files located [here](gerbers/).
+
 
 ## Configuration
 
-Before you start programming, you should have a Raspberry Pi running Raspbian or similar. Either connected through SSH (recommended) or directly, we need to make sure `ARM I2C interface` is enabled, by typing:
+Before you start programming, you should have a Raspberry Pi running Raspbian or similar. Either connected through SSH (recommended) or typing directly on the RPi, we need to make sure `ARM I2C interface` is enabled, by typing:
 
        sudo raspi-config
 
@@ -68,7 +68,7 @@ Type the following:
 
        cd Downloads
        git clone https://github.com/fix-ON/cdceprog_DFO.git
-       cd cdceprog
+       cd cdceprog_DFO
        
 Now, if your programming a DFO for the Mega Drive or Playstation, use `MD_PSX.HEX`. The Saturn, use `SAT.HEX`.
 
@@ -93,8 +93,8 @@ Connect the DFO pins to the corresponding points on your specific motherboard ve
 - [Installation guide for Playstation](https://www.consolesunleashed.com/guides/sony-playstation-dual-frequency-oscillator-install-guide/)
 - [Installation guide for Mega Drive](https://www.consolesunleashed.com/guides/sony-playstation-dual-frequency-oscillator-install-guide/)
 
-Playstation Playstation SCPH-100X PU-8:
+Playstation SCPH-100X PU-8:
 ![Playstation SCPH-100X PU-8 version](images/playstation-dfo-scph-100x-pu-8-3.5V.jpg)  
 
 Example of installed DFO in a Playstation.
-![example](images/example.JPG)
+![example](images/example.jpg)
