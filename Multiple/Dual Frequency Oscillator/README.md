@@ -11,11 +11,9 @@ Credit goes to [ikorb](https://github.com/ikorb/cdceprog).
 
 There are three types of DFO's. Each one are suited for different consoles:
 
-* DFO 5V DIL14 - Mega Drive, Amiga
-* DFO 5V SMD - Playstation, NEO GEO MV-1C
-* DFO 3.3V SMD - SNES
-
-Pre-programmed DFO's are hard to find in stock these days, so you should consider making your own DFO PCB's. Hence the reason for this guide. 
+* DFO 5V DIL14 - Mega Drive
+* DFO 5V SMD - Playstation
+* DFO 3.3V SMD - SNES (?)
 
 If you don't already have a PCB or can't manage to buy one, you can order them from [JLCPCB](https://jlcpcb.com/) or [PCBWay](https://pcbway.com/) by uploading the gerber files located [here](gerbers/).
 
@@ -40,13 +38,14 @@ Great! Now you're all set for the next step.
 
 ## Connections
 
-To connect the DFO to the Raspberry Pi, check the nice overview of the
-GPIO connector [here](http://pi.gadgetoid.com/pinout). The programming pins on the DFO must be connected as follows:
+To connect the DFO to the Raspberry Pi, the programming pins on the DFO must be connected as follows:
 
-* DFO `SDA` to RasPi pin 3
 * DFO `SCL` to RasPi pin 5
+* DFO `SDA` to RasPi pin 3
 * DFO `GND` to RasPi pin 6
-* DFO `3.3V` or `5V` to RasPi pin 1 or 2 (depends on the DFO board).
+* DFO `3.3V` or `5V` to RasPi pin 1 or 2 (depends on the DFO board)
+
+![pinout](images/pinout.png) 
 
 ![example](images/dfo_rpi.jpg)
 
@@ -56,7 +55,7 @@ When the connection is done, check if you can communicate again with the clock g
 
 You should see a lot of dashes (like the previous picture) but in all those dashes there should be a number saying 65 (or any number) like this:
 
-![i2detect](images/i2cdetect.png).
+![i2detect](images/i2c_detect.png).
 
 If so, your good to go. If not, check your connections.
 
