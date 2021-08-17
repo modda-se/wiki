@@ -97,3 +97,8 @@ Playstation SCPH-100X PU-8:
 
 Example of installed DFO in a Playstation.
 ![example](images/example.jpg)
+
+## To-Do
+
+* Create a guide for making your own HEX-files (timing files).
+* Collect HEX-files for all available consoles that needs a DFO (if so, maybe above step could be skipped).
