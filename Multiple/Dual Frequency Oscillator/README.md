@@ -40,6 +40,7 @@ Great! Now you're all set for the next step.
 
 To connect the DFO to the Raspberry Pi, the programming pins on the DFO must be connected as follows:
 
+
 * DFO `SCL` to RasPi pin 5
 * DFO `SDA` to RasPi pin 3
 * DFO `GND` to RasPi pin 6

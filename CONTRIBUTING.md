@@ -2,6 +2,7 @@
 
 - All guides should be written in Markdown in .md files.
 - Upload no copyrighted files (game roms etc.)
+- Try to avoid time-sensitive information since it will lead to outdated guides.
 
 ## Folder structure
 - Root

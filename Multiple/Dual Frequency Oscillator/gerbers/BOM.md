@@ -1,11 +1,13 @@
 ## BOM
 
 Here's a BOM (bill of materials) of all the parts you need for the different DFO boards. 
+
 Go to www.mouser.com and type in the part. no of the component. If you can't find it there, try looking it up at www.octopart.com.
 
 DFO 5V DIL14
 
 ![DIL14](/images/BOM_DFO_5V_SMD.png)
+
 | Amount | Description | Mouser.com Part.no |
 | ----------- | ----------- | ---------- |
 | 1x |          CDCE913 clock generation IC     | 595-CDCE913PWR
@@ -23,6 +25,7 @@ DFO 5V DIL14
 DFO 5V SMD
 
 ![5VSMD](/images/BOM_DFO_5V_SMD.png)
+
 | Amount | Description | Mouser.com Part.no |
 | ----------- | ----------- | ---------- |
 | 1x |          CDCE913 clock generation IC         | 595-CDCE913PWR
@@ -39,6 +42,7 @@ DFO 5V SMD
 DFO 3.3V SMD
 
 ![5VSMD](/images/BOM_DFO_3.3V_SMD.png)
+
 | Amount | Description | Mouser.com Part.no |
 | ----------- | ----------- | ---------- |
 | 1x |          CDCE913 clock generation IC     | 595-CDCE913PWR
