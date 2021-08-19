@@ -12,7 +12,7 @@ Credit goes to [ikorb](https://github.com/ikorb/cdceprog).
 There are three types of DFO's. Each one are suited for different consoles:
 
 * DFO 5V DIL14 - Mega Drive
-* DFO 5V SMD - Playstation
+* DFO 5V SMD - Playstation, Saturn
 * DFO 3.3V SMD - SNES (?)
 
 If you don't already have a PCB or can't manage to buy one, you can order them from [JLCPCB](https://jlcpcb.com/) or [PCBWay](https://pcbway.com/) by uploading the gerber files located [here](gerbers/).
