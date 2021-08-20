@@ -5,7 +5,7 @@ Raspberry Pi's with built in WiFi can be used in a lot of ways without having to
 
 * Take out the Rpi's SD-card and connect it to your computer.
 
-* Download [this file](/ssh_wifi.zip) and unzip it. You should see two files called:
+* Download [this file](ssh_wifi.zip) and unzip it. You should see two files called:
         
         wpa_supplicant.conf
         ssh
