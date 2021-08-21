@@ -1,5 +1,5 @@
 # Video Looper
-This is a simplified guide for how to install the **Adafruits - Rpi Video Looper**. This is an application that turns your Raspberry Pi into a dedicated looping video playback device. This can be used in art installations, fairs, theatre, events, infoscreens, advertisment etc...
+This is a simplified guide for how to install the **Adafruits - Rpi Video Looper**. This is an application that turns your Raspberry Pi into a dedicated looping video playback device. This can be used in art installations, fairs, theatre, events, info screens, advertisement etc...
 
 Original project can be found here: https://github.com/adafruit/pi_video_looper
 
@@ -25,25 +25,28 @@ All done! Now let's change some settings.
 
 ## Configuration
 
-To change settings of the Rpi Video Looper, type:
+To change settings of the Video Looper, type:
 
     sudo nano /boot/video_looper.ini
 
 From here you can change a lot of things but here's some important ones:
 
 * If you want to load videos from a USB drive, you don't need to change anything. Load up your favourite videos (placed in root of USB) and connect it to your Rpi.
-* Although, if you have a Rpi ZERO, that's not so easy without adapters. Instead you can upload videos on the internal memory, but you'll need to change these parameters, like this:
+* Although, if you have a Rpi ZERO, that's not so easy without adapters. Instead you can upload videos to the SD-Card, but you'll need to change these parameters, like this:
 
         #file_reader = usb_drive
         file_reader = directory
         #file_reader = usb_drive_copymode
 
-This will make the video looper look for videos in a directory on the internal memory, instead of the USB-drive. But, there's also some permission problems with the installed video directory `/home/pi/video`, so we use the `Videos` folder instead, like so:
+This will now make the video looper look for videos in a directory on the SD-card, instead of the USB-drive. But, there's also some permission problems with the installed video directory `/home/pi/video`, so we use the `Videos` folder instead, like so:
 
         # The path to search for movies when using directory file reader.
         path = /home/pi/Videos
 
 When your done, hit `CTRL+X` followed by `Y` and `ENTER`, to Save. 
+
+**NOTE** If you've installed a **Lite** version of the Raspberry Pi OS, there's no `Videos` by default, so create one:
+    mkdir /home/pi/Videos
 
 For easier access to the video looper settings, you can also pull the SD-card out and connect it to your computer, open `video_looper.ini` which is located in the root of the SD-card with a text editor.
 
@@ -67,12 +70,5 @@ When using the Raspberry Pi ZERO, you might want to use the Analog audio only. U
 
 ## To-do
 
-- Add instructions for removing/disable the Video Looper.
-
-
-
-
-
-
-
-
+- Add instructions for removing/disable the Video Looper
+- Add step to sync video folder with Rclone (Google Drive)
