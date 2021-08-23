@@ -60,11 +60,11 @@ But, when using the SD-card as storage, the easiest way to upload videos is to u
         
 Now start uploading some awesome videos that will loop forever! :D
 
-## Commands and filenaming
+## Commands and file naming
 * **ESC** - Exits video looper.
 * **K** - Skips to next file.
 * **S** - Stop/Start playback of current file.
-* **P** - Shutsdown RPi.
+* **P** - Shuts down RPi.
 
 You can have one video repeated X times before playing the next by adding `_repeat_Nx` to the filename of a video, where N is a positive number, for example:
     
@@ -72,7 +72,7 @@ You can have one video repeated X times before playing the next by adding `_repe
     Divorce_repeat_x12.mp4
 
 ## Disable/Enable Video Looper
-To **disable** and prevent the Video Looper from ever starting again at boot, runt this script located in the `pi_video_looper` folder:
+To **disable** and prevent the Video Looper from ever starting again at boot, run this script located in the `pi_video_looper` folder:
 
     sudo bash /home/pi/Downloads/pi_video_looper/disable.sh
 
