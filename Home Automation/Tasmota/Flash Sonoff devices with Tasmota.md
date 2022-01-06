@@ -1,5 +1,5 @@
-# Flash Sonoff devices with Tasmota
-This a easy step-by-step guide on how to flash Sonoff devices like Sonoff S26, Sonoff Basic etc. 
+# Flash ESP8266 based devices with Tasmota
+This a easy step-by-step guide on how to flash ESP8266 based devices like Sonoff S26, Sonoff Basic etc. 
 In this guide we'll flash the Sonoff S26 plug. You can find more info about the flashing process for other Sonoff devices [**here**](https://templates.blakadder.com/plug.html).
 
 ## Preparation
