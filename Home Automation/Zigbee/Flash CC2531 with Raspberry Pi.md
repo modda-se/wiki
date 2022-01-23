@@ -1,7 +1,7 @@
 # Freepad - Flash CC2531 with Raspberry Pi
 You can flash a CC2531 chip without having a specific programmer. Use a Raspberry Pi instead! This is a simplified guide on how to do just that. 
 
-Credut and orignal source here: 
+Credit and orignal source here: 
 
 https://github.com/diyruz/freepad
                 
@@ -10,7 +10,7 @@ https://modkam.ru/2019/11/13/pult-zigbee-v2-prosto-otlomi-lishnee/#more-1264
 
 ## Preparation
 
-This guide will asume that you already have your Rpi setup and SSH enabled. 
+This guide will assume that you already have your Rpi setup and SSH enabled. 
 
 * First, make sure `wiringPi` are installed: 
 
