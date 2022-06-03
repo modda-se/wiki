@@ -20,9 +20,13 @@ If you don't already have a PCB or can't manage to buy one, you can order them f
 
 ## Configuration
 
-Before you start programming, you should have a Raspberry Pi running Raspbian or similar. Either connected through SSH (recommended) or typing directly on the RPi, we need to make sure `ARM I2C interface` is enabled, by typing:
+Before you start programming, you should have a Raspberry Pi running Raspbian or similar. Either connected through SSH (recommended) or typing directly on the RPi, we need to make sure `i2c-tools` are installed and `ARM I2C interface` is enabled, by typing:
 
-       sudo raspi-config
+       sudo apt-get install i2c-tools
+
+then:
+
+        sudo raspi-config
 
 Navigate to `Interface Options > I2C > Yes` to enable `ARM I2C interface`.
 
