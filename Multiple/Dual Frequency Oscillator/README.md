@@ -9,20 +9,23 @@ Credit goes to [ikorb](https://github.com/ikorb/cdceprog).
 
 ## DFO PCB's
 
-There are three types of DFO's. Each one are suited for different consoles:
+There are four types of DFO's. Each one are suited for different consoles:
 
 * DFO 5V DIL14 - Mega Drive
 * DFO 5V SMD - Playstation, Saturn
 * DFO 3.3V SMD - SNES (?)
+* MFO 3.3V (Martin Hejnfelt) - NES (50/60Hz mod)
 
 If you don't already have a PCB or can't manage to buy one, you can order them from [JLCPCB](https://jlcpcb.com/) or [PCBWay](https://pcbway.com/) by uploading the gerber files located [here](gerbers/).
 
 
 ## Configuration
 
-Before you start programming, you should have a Raspberry Pi running Raspbian or similar. Either connected through SSH (recommended) or typing directly on the RPi, we need to make sure `i2c-tools` are installed and `ARM I2C interface` is enabled, by typing:
+**Before you start programming, you should have a Raspberry Pi running `Debian Buster` or older. Newer operating systems like `Debian Bullseye` uses Python3 by default and doesn't work flawless with this guide. The script in this guided uses Python2.** 
 
-       sudo apt-get install i2c-tools
+So, either connected through SSH (recommended) or typing directly on the RPi, we need to make sure `i2c-tools, python-smbus and github` are installed and `ARM I2C interface` is enabled, by typing:
+
+       sudo apt-get install -y i2c-tools python-smbus git
 
 then:
 
@@ -69,7 +72,6 @@ Let's start by downloading the Python script (this does the programming) and the
 
 Type the following:
 
-       cd Downloads
        git clone https://github.com/fix-ON/cdceprog_DFO.git
        cd cdceprog_DFO
        
